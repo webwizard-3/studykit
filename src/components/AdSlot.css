@@ -1,0 +1,17 @@
+.ad-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--paper-raised);
+  color: var(--ink-faint);
+  font-size: 0.8rem;
+  margin: 28px 0;
+}
+
+.ad-slot--banner { min-height: 90px; }
+.ad-slot--rectangle { min-height: 250px; max-width: 336px; margin-left: auto; margin-right: auto; }
+.ad-slot--inline { min-height: 60px; }
+
+.ad-slot__label { letter-spacing: 0.02em; }

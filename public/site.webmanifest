@@ -1,0 +1,12 @@
+{
+  "name": "StudyKit",
+  "short_name": "StudyKit",
+  "description": "Free, fast calculators and study tools for students.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2f2ec",
+  "theme_color": "#2657a6",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

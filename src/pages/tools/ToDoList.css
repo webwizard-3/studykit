@@ -1,0 +1,5 @@
+.todo-item { display: flex; align-items: center; gap: 10px; }
+.todo-item input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--accent); flex-shrink: 0; }
+.todo-item__text { flex: 1; }
+.todo-item__text.is-done { text-decoration: line-through; color: var(--ink-faint); }
+.todo-count { font-size: 0.85rem; color: var(--ink-faint); margin-bottom: 4px; }

@@ -1,0 +1,101 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header__row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 64px;
+}
+
+.site-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+.site-header__logo:hover { text-decoration: none; }
+
+.site-header__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; height: 30px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-shrink: 0;
+}
+.site-header__nav a {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+}
+.site-header__nav a:hover { text-decoration: none; color: var(--ink); }
+.site-header__nav a.is-active { color: var(--ink); border-bottom-color: var(--accent); }
+
+.site-header__search { flex: 1; max-width: 360px; margin-left: auto; }
+
+.site-header__theme {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px; height: 38px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-strong);
+  background: var(--paper-raised);
+  color: var(--ink-soft);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.site-header__theme:hover { color: var(--ink); }
+
+.site-header__menu-btn {
+  display: none;
+  border: none;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 6px;
+}
+
+.site-header__mobile-nav { display: none; }
+
+@media (max-width: 860px) {
+  .site-header__nav, .site-header__search { display: none; }
+  .site-header__menu-btn { display: inline-flex; }
+  .site-header__mobile-nav {
+    display: block;
+    border-top: 1px solid var(--line);
+    padding: 14px 0 18px;
+  }
+  .site-header__mobile-nav .container { display: flex; flex-direction: column; gap: 14px; }
+  .site-header__mobile-nav nav { display: flex; flex-direction: column; gap: 2px; }
+  .site-header__mobile-nav nav a {
+    padding: 10px 4px;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--line);
+    font-size: 0.95rem;
+  }
+  .site-header__mobile-nav nav a.is-active { color: var(--accent); }
+}

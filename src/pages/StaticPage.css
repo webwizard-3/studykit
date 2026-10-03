@@ -1,0 +1,17 @@
+.static-page { padding: 48px 0 80px; }
+.static-page__inner { max-width: 720px; }
+.static-page h1 { margin-bottom: 12px; }
+.static-page__lede { font-size: 1.05rem; margin-bottom: 32px; }
+.static-page section { margin-bottom: 32px; }
+.static-page h2 { margin-bottom: 10px; }
+.static-page ul { padding-left: 20px; color: var(--ink-soft); }
+.static-page li { margin-bottom: 6px; }
+.callout {
+  background: var(--amber-tint);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+}

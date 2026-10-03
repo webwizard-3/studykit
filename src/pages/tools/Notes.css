@@ -1,0 +1,22 @@
+.notes-layout { display: grid; grid-template-columns: 240px 1fr; gap: 20px; min-height: 420px; }
+@media (max-width: 720px) { .notes-layout { grid-template-columns: 1fr; } }
+.notes-list { border-right: 1px solid var(--line); padding-right: 16px; display: flex; flex-direction: column; gap: 6px; }
+@media (max-width: 720px) { .notes-list { border-right: none; border-bottom: 1px solid var(--line); padding-right: 0; padding-bottom: 16px; flex-direction: row; overflow-x: auto; } }
+.notes-list__item {
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--ink);
+  flex-shrink: 0;
+  min-width: 140px;
+}
+.notes-list__item:hover { background: var(--accent-tint); }
+.notes-list__item.is-active { background: var(--accent-tint); }
+.notes-list__title { font-weight: 600; font-size: 0.9rem; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.notes-list__preview { font-size: 0.78rem; color: var(--ink-faint); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.notes-editor textarea { min-height: 320px; }
+.notes-editor__title { font-size: 1.1rem; font-weight: 700; border: none; background: none; width: 100%; margin-bottom: 10px; padding: 4px 0; }
+.notes-editor__title:focus { outline: none; box-shadow: none; border-bottom: 1px solid var(--accent); }

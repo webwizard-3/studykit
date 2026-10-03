@@ -1,0 +1,5 @@
+.guides-list { display: flex; flex-direction: column; gap: 40px; margin-top: 8px; }
+.guide-item h2 { margin-bottom: 8px; }
+.guide-item p { max-width: 68ch; }
+.guide-item__tools { font-size: 0.85rem; margin-top: 10px; }
+.guide-item__tools a { margin-right: 14px; }

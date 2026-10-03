@@ -1,0 +1,9 @@
+.countdown-strip { display: flex; gap: 14px; margin-top: 4px; flex-wrap: wrap; }
+.countdown-unit { flex: 1; min-width: 70px; text-align: center; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 8px; }
+.countdown-unit__num { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; }
+.countdown-unit__label { font-size: 0.72rem; color: var(--ink-faint); text-transform: none; margin-top: 2px; }
+.exam-item { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.exam-item:last-child { border-bottom: none; }
+.exam-item__head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.exam-item__name { font-weight: 700; font-size: 1.05rem; }
+.exam-item__date { font-size: 0.8rem; color: var(--ink-faint); }

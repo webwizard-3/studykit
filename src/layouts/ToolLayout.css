@@ -1,0 +1,69 @@
+.tool-page__inner {
+  padding: 28px 20px 64px;
+  max-width: 780px;
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+}
+.breadcrumb li:not(:last-child)::after { content: "/"; margin-left: 6px; }
+.breadcrumb a { color: var(--ink-faint); }
+.breadcrumb a:hover { color: var(--accent); }
+.breadcrumb li[aria-current="page"] { color: var(--ink-soft); }
+
+.tool-page__header { margin-bottom: 24px; }
+.tool-page__lede { font-size: 1.05rem; max-width: 62ch; }
+
+.tool-page__widget { margin-bottom: 8px; }
+
+.tool-page__section {
+  padding-top: 32px;
+  margin-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.tool-page__section h2 { margin-bottom: 14px; }
+
+.tool-page__steps { padding-left: 22px; display: flex; flex-direction: column; gap: 8px; }
+.tool-page__steps li { color: var(--ink-soft); padding-left: 4px; }
+
+.tool-page__formula, .tool-page__example {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.tool-page__formula code, .tool-page__example code {
+  font-family: var(--font-mono);
+  background: var(--accent-tint);
+  padding: 1px 6px;
+  border-radius: 4px;
+  color: var(--ink);
+  font-size: 0.88em;
+}
+
+.tool-page__faq { display: flex; flex-direction: column; gap: 18px; }
+.tool-page__faq-item dt { font-weight: 600; margin-bottom: 4px; }
+.tool-page__faq-item dd { margin: 0; color: var(--ink-soft); }
+
+.tool-page__related { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.tool-page__related li {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  background: var(--paper-raised);
+}
+.tool-page__related a { font-weight: 600; }
+.tool-page__related p { margin: 4px 0 0; font-size: 0.85rem; color: var(--ink-faint); }
+
+@media (max-width: 560px) {
+  .tool-page__related { grid-template-columns: 1fr; }
+}
